@@ -17,6 +17,24 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions 'movie'
+    productFlavors{
+        tokoa{
+            applicationIdSuffix ".tokoa"
+            dimension 'movie'
+        }
+
+        tokob{
+            applicationIdSuffix ".tokob"
+            dimension 'movie'
+        }
+
+        tokoc{
+            applicationIdSuffix ".tokoc"
+            dimension 'movie'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
